@@ -35,13 +35,13 @@ void bucle2(int MAX){
     auto time = chrono::duration_cast<chrono::milliseconds>(t1-t0).count();
     cout<<"Bucle 2: "<<time/1000.0<<"\n";
 }
-int main(int argc, char const** argv){
-    int MAX = 10;
-    for(int i=0;i<5;++i){
-        cout<<"Test "<<i+1<<" con MAX = "<<MAX<<":"<<endl;
+int main(){
+    int MAX = 10000;
+    for(int i=0;i<10;++i){
+        cout<<"Prueba "<<i+1<<" con MAX = "<<MAX<<": "<<endl;
         bucle1(MAX);
         bucle2(MAX);
-        MAX *=10;
+        MAX +=10000;
     }
     return 0;
 }
